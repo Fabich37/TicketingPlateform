@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: left;
 }
 
 a {
@@ -9,4 +10,17 @@ a {
 
 .st1{
   font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+table{
+  width: 100%;
+}
+
+th, td {
+  border-bottom: 1px solid black;
+}
+
+thead{
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
 }

@@ -1,4 +1,27 @@
 extends layout
 
 block content
+    p Connected in #{userSession}
+    form(method='POST' action='/')
+        button.btn.btn-primary(type='submit') Log Out
     h1= title
+    table
+        thead
+            tr
+                th Name
+                th Date
+                th Start
+                th End
+                th Price (€)
+        tbody
+            each ticket in ticketsList
+                tr
+                    each t in ticket
+                        th= t
+    br
+    form(method='POST' action='/')
+        button.btn.btn-primary(type='submit') Buy ticket
+
+
+
+
